@@ -27,13 +27,13 @@ Esta aplicação foi desenvolvida e testada em um ambiente Linux Ubuntu, com tes
 
 Nenhuma instalação adicional é requerida. Apenas os prés-requisitos citados acima.
 
-A única configuração utilizada para o ambiente Linux, foi o Makefile para simplificar o processo de compilação.
+A única configuração utilizada para o ambiente Linux, foi a geração do arquivo "Makefile" para simplificar o processo de compilação.
 
 ### Gerando o Arquivo Binário:
 
 - Execute o comando a seguir, para gerar o arquivo binário:
 ```shell
-$~ Makefile
+$~ make
 ```
 
 ### Executando a Aplicação:
