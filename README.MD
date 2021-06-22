@@ -1,4 +1,4 @@
-![Logo of the project](https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.harold.thimbleby.net%2Fpresson%2FSite%2Fresources%2F462651E4-7693-413F-8565-5CCAAEC2925B.html&psig=AOvVaw2sVL_izCi31manSjrHkBkF&ust=1624411652218000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCMCF7I2LqvECFQAAAAAdAAAAABAO)
+![Logo of the project](https://www.huffmancoding.com/wp-content/uploads/2008/12/dah.jpg)
 
 # Codificação de Huffman:
 > David Albert Huffman (9 de agosto de 1925 — Santa Cruz, 7 de outubro de 1999) foi um pioneiro no campo da ciência da computação.
