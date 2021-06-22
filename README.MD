@@ -1,80 +1,77 @@
-![Logo of the project](https://upload.wikimedia.org/wikipedia/he/c/c3/David_huffman.jpg)
+![Logo of the project](https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.harold.thimbleby.net%2Fpresson%2FSite%2Fresources%2F462651E4-7693-413F-8565-5CCAAEC2925B.html&psig=AOvVaw2sVL_izCi31manSjrHkBkF&ust=1624411652218000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCMCF7I2LqvECFQAAAAAdAAAAABAO)
 
-# Name of the project
-> Additional information or tagline
+# Codificação de Huffman:
+> David Albert Huffman (9 de agosto de 1925 — Santa Cruz, 7 de outubro de 1999) foi um pioneiro no campo da ciência da computação.
 
-A brief description of your project, what it is used for and how does life get
-awesome when someone starts to use it.
+Este método de compressão é um dos mais utilizados na atualidade para compressão de diversos tipos de mídias diferentes – na maioria das vezes, como componente de codecs mais complexos (Salomon, 2007) – apesar de ter sido inicialmente desenvolvido para compressão de texto (Pu, 2006).
 
-## Installing / Getting started
+David Huffman, que desenvolveu o método como projeto da disciplina de "Teoria da Informação" em 1950 (Blelloch, 2001), enquanto era aluno de Doutoramento no MIT (Sayood, 2006) (Wikimedia Foundation, Inc., 2016), e publicou as suas conclusões em 1952 no artigo “A Method for the Construction of Minimum-Redundancy Codes” na revista Proceedings of the I.R.E. (Huffman, 1952).
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+A codificação de Huffman é baseada na "Teoria de Informação" de Shannon (Shannon, 1948), onde em um elemento de informação (texto, imagem, áudio, etc.) representado por símbolos, alguns desses símbolos ocorrem mais vezes que outros. Se representarmos esses símbolos mais comuns utilizando códigos menores (usando menos bits), por exemplo; iremos obter uma codificação binária com menos bits, como resultado de uma diminuição do comprimento médio (em bits) de cada código (Huffman, 1952) (Pu, 2006). O algoritmo de Huffman é, portanto, baseado na categoria de Codificação de Entropia – a informação é encarada como uma sequência de símbolos genéricos, menosprezando a semântica dos mesmos -, sendo um modo de codificação sem perdas – o código resultante é totalmente reversível; ou seja, a sua decodificação resulta num fluxo de dados exactamente igual ao fluxo de dados de origem (Ribeiro, Apontamentos das Aulas, 2016).
 
+## Pré-Requisitos:
+- [Ambiente linux](https://www.linux.org/pages/download/)
+- [Compilador GCC](https://gcc.gnu.org/install/index.html)
+- [Makefile](https://www.unixmen.com/install-ubuntu-make-on-ubuntu-15-04/)
+
+- Também pode ser executado em um ambiente Windows, desde que se tenha uma versão do gcc instalado. Neste caso, o MakeFile não funcionará, e um arquivo .bat deverá ser criado.
+
+- IDE's também podem executar esta aplicação sem nenhum problema. Tais como:
+-[Code:Blocks] (https://www.codeblocks.org/)
+-[DevC++] (https://sourceforge.net/projects/orwelldevcpp/)
+-[Visual Studio Code](https://code.visualstudio.com/)
+
+- Esta aplicação foi desenvolvida e testada em um ambiente Linux Ubuntu, com testes também realizados em ambiente Windows com a IDE CodeBlocks.
+
+## Instalação:
+
+Nenuma instalação adicional é requerida. Apenas os prés-requisitos citados acima.
+
+A única configuração utilizada, foi o Makefile para simplificar o processo de compilação.
+
+### Gerando o Arquivo Binário:
+
+- Execute o comando a seguir, para gerar o binário:
 ```shell
-packagemanager install awesome-project
-awesome-project start
-awesome-project "Do something!"  # prints "Nah."
+$~ Makefile
 ```
 
-Here you should say what actually happens when you execute the code above.
+### Executando a Aplicação:
 
-### Initial Configuration
-
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
-
-## Developing
-
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
-
+- Caso o comando Makefile tenha funcionado corretamente
 ```shell
-git clone https://github.com/your/awesome-project.git
-cd awesome-project/
-packagemanager install
+$~ ./nome_da_aplicacao [Parâmetro 1] [Parâmetro 2] [Parâmetro 3]
+```
+Onde - Compressão:
+Parâmetro 1 = "-c" Comprime o Arquivo
+Parâmetro 2 = Nome do Arquivo a Ser Comprimido (entrada)
+Parâmetro 3 = Nome do Arquivo a Ser Gerado (saída)
+
+Onde - Descompressão:
+Parâmetro 1 = "-d" Descomprime o Arquivo
+Parâmetro 2 = Nome do Arquivo a Ser Descomprimido (entrada)
+Parâmetro 3 = Nome do Arquivo a Ser Gerado (saída)
+
+Exemplo:
+```shell
+$~ ./huffman -c comprima.isso nisso.hx
 ```
 
-And state what happens step-by-step.
+NOTA: Por padrão, o arquivo compactado terá a extensão ".hx"
 
-### Building
-
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here:
-
-```shell
-./configure
-make
-make install
-```
-
-Here again you should state what actually happens when the code above gets
-executed.
-
-### Deploying / Publishing
-
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
-```shell
-packagemanager deploy awesome-project -s server.com -u username -p password
-```
-
-And again you'd need to tell what the previous code actually does.
-
-## Features
+## Features:
 
 What's all the bells and whistles this project can perform?
 * What's the main functionality
 * You can also do another thing
 * If you get really randy, you can even do this
 
-## Configuration
+## Configuration:
 
 Here you should write what are all of the configurations a user can enter when
 using the project.
 
-#### Argument 1
+#### Argument 1:
 Type: `String`  
 Default: `'default value'`
 
@@ -86,13 +83,13 @@ Example:
 awesome-project "Some other value"  # Prints "You're nailing this readme!"
 ```
 
-#### Argument 2
+#### Argument 2:
 Type: `Number|Boolean`  
 Default: 100
 
 Copy-paste as many of these as you need.
 
-## Contributing
+## Contributing:
 
 When you publish something open source, one of the greatest motivations is that
 anyone can just jump in and start contributing to your project.
@@ -108,7 +105,7 @@ guide), you should link it here. If there's a lot of things to take into
 consideration, it is common to separate this section to its own file called
 `CONTRIBUTING.md` (or similar). If so, you should say that it exists here.
 
-## Links
+## Links:
 
 Even though this information can be found inside the project on machine-readable
 format like in a .json file, it's good to include a summary of most useful
@@ -125,10 +122,12 @@ links to humans using your project. You can include links like:
   - Someone else's project: https://github.com/someones/awesome-project/
 
 
-## Licensing
+## Licensing:
 
 One really important part: Give your project a proper license. Here you should
 state what the license is and how to find the text version of the license.
 Something like:
 
 "The code in this project is licensed under MIT license."
+
+## Referências:
