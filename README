@@ -79,7 +79,7 @@ nodeArvore *novoNodeArvore(byte c, int frequencia, nodeArvore *esquerda, nodeArv
 // Insere um nó na lista
 void insereLista(nodeLista *n, lista *l);
 
-// Função auxiliar utilizada na geração da árvore, para determinar o menor valor de cada nó
+// Função auxiliar utilizada na geração da árvore, para determinar o menor valor (frequência)
 nodeArvore *popMinLista(lista *l);
 
 // Determina a "frequência" em que um caracter é encontrado dentro do 
