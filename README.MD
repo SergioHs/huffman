@@ -14,43 +14,43 @@ A codificação de Huffman é baseada na "Teoria de Informação" de Shannon (Sh
 - [Compilador GCC](https://gcc.gnu.org/install/index.html)
 - [Makefile](https://www.unixmen.com/install-ubuntu-make-on-ubuntu-15-04/)
 
-- Também pode ser executado em um ambiente Windows, desde que se tenha uma versão do gcc instalado. Neste caso, o MakeFile não funcionará, e um arquivo .bat deverá ser criado.
+Também pode ser executado em um ambiente Windows, desde que se tenha uma versão do gcc instalado. Neste caso, o MakeFile não funcionará, e um arquivo .bat deverá ser criado.
 
-- IDE's também podem executar esta aplicação sem nenhum problema. Tais como:
--[Code:Blocks] (https://www.codeblocks.org/)
--[DevC++] (https://sourceforge.net/projects/orwelldevcpp/)
--[Visual Studio Code](https://code.visualstudio.com/)
+IDE's também podem executar esta aplicação sem nenhum problema. Tais como:
+- [Code:Blocks] (https://www.codeblocks.org/)
+- [DevC++] (https://sourceforge.net/projects/orwelldevcpp/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 - Esta aplicação foi desenvolvida e testada em um ambiente Linux Ubuntu, com testes também realizados em ambiente Windows com a IDE CodeBlocks.
 
 ## Instalação:
 
-Nenuma instalação adicional é requerida. Apenas os prés-requisitos citados acima.
+Nenhuma instalação adicional é requerida. Apenas os prés-requisitos citados acima.
 
 A única configuração utilizada, foi o Makefile para simplificar o processo de compilação.
 
 ### Gerando o Arquivo Binário:
 
-- Execute o comando a seguir, para gerar o binário:
+- Execute o comando a seguir, para gerar o arquivo binário:
 ```shell
 $~ Makefile
 ```
 
 ### Executando a Aplicação:
 
-- Caso o comando Makefile tenha funcionado corretamente
+- Caso o comando Makefile tenha funcionado corretamente, aplicação poderá ser executada da seguinte maneira:
 ```shell
 $~ ./nome_da_aplicacao [Parâmetro 1] [Parâmetro 2] [Parâmetro 3]
 ```
 Onde - Compressão:
-Parâmetro 1 = "-c" Comprime o Arquivo
-Parâmetro 2 = Nome do Arquivo a Ser Comprimido (entrada)
-Parâmetro 3 = Nome do Arquivo a Ser Gerado (saída)
+- Parâmetro 1 = "-c" Comprime o Arquivo
+- Parâmetro 2 = Nome do Arquivo a Ser Comprimido (entrada)
+- Parâmetro 3 = Nome do Arquivo a Ser Gerado (saída)
 
 Onde - Descompressão:
-Parâmetro 1 = "-d" Descomprime o Arquivo
-Parâmetro 2 = Nome do Arquivo a Ser Descomprimido (entrada)
-Parâmetro 3 = Nome do Arquivo a Ser Gerado (saída)
+- Parâmetro 1 = "-d" Descomprime o Arquivo
+- Parâmetro 2 = Nome do Arquivo a Ser Descomprimido (entrada)
+- Parâmetro 3 = Nome do Arquivo a Ser Gerado (saída)
 
 Exemplo:
 ```shell
@@ -131,3 +131,11 @@ Something like:
 "The code in this project is licensed under MIT license."
 
 ## Referências:
+- Salomon, D. (2007). Data Compression (4th ed.). London: Springer.
+- Pu, I. M. (2006). Fundamental Data Compression. Oxford, United Kingdom: Elsevier.
+- Blelloch, G. E. (2001). Introduction to Data Compression. In G. E. Blelloch, Algorithms in the Real World. Pittsburg, PA, United States of America: Carnegie Mellon University.
+- Sayood, K. (2006). Introduction to Data Compression. San Francisco: Morgan Kauffman.
+- Wikimedia Foundation, Inc. (30/03/2016). Huffman Coding. Acessado em 21/06/2021, de Wikipedia, the free encyclopedia: https://en.wikipedia.org/wiki/Huffman_coding
+- Huffman, D. A. (1952). A Method for the Construction of Minimum-Redundancy Codes. Proceedings of the I.R.E., 1098-1101.
+- Shannon, C. E. (1948). A Mathematical Theory of Communication. Bell System Technical Journal, 27, 379–423 & 623–656.
+- Ribeiro, N. (2016). Apontamentos das Aulas. Multimédia II. Porto: Universidade Fernando Pessoa.
