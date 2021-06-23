@@ -67,9 +67,9 @@ Ela implementa uma separação de especificação e implementação, que permite
 
 A aplicação em si, utiliza a ideia de uma árvore binária, para a implementação da codificação de Huffman.
 
-### Vantagens do uso do TAD:
+### Vantagens do uso do TDA:
 
-Mais seguro programar: apenas as operações do Tipo Abstrato de Dados alteram os dados. 
+Mais seguro programar: apenas as operações do Tipo de Dado Abstrato alteram os dados. 
 Maior independência e portabilidade de código e Manutenção: alterações na implementação de um TAD não implicam em alterações em seu uso.
 
 ### Métodos Públicos:
