@@ -12,7 +12,7 @@ huffman.o: huffman.c huffman_interface.h huffman_privado.h
 	$(CC) $(CFLAGS) -c huffman.c -o huffman.o
 
 main: main.c huffman.o
-	$(CC) $(CFLAGS) main.c huffman.o -o main
+	$(CC) $(CFLAGS) main.c huffman.o -o huffman
 
 clean:
 	rm -f main *.o core a.out *.*~ Makefile~
